@@ -1,9 +1,13 @@
-import Home from "../pages/Home";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const RootLayouts = () => {
   return (
     <>
-      <Home />
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   );
 };
