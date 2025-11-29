@@ -1,7 +1,7 @@
 const Protfolio = () => {
   return (
-    <div>
-      <h1>Protfolio</h1>
+    <div className="text-center pt-25 text-4xl text-red-500">
+      <h1>This is Protfolio Page</h1>
     </div>
   );
 };

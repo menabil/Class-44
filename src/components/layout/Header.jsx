@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <Container>
-        <div className={'pt-5 z-1 fixed h-10 w-[1170px]'}>
+        <div className={"pt-5 z-1 fixed w-[1170px]"}>
           <Flex className="justify-between">
             <div className="">
               <Image imgSrc={logo} />

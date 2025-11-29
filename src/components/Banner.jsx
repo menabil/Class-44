@@ -7,7 +7,7 @@ import banner from "../assets/Banner.png";
 const Banner = () => {
   return (
     <>
-      <Image imgSrc={banner} className={"relative w-full"} />
+      <Image imgSrc={banner} />
       <Container>
         <div className="mt-[150px] absolute top-[50px]">
           <Image imgSrc={bannerLogo} />

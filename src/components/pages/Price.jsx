@@ -1,7 +1,7 @@
 const Price = () => {
   return (
-    <div>
-      <h1>Price</h1>
+    <div className="text-center pt-25 text-4xl text-red-500">
+      <h1>This is Price Page</h1>
     </div>
   );
 };
