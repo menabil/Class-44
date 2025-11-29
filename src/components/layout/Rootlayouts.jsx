@@ -1,9 +1,11 @@
+import Home from "../pages/Home";
 
-
-const Rootlayouts = () => {
+const RootLayouts = () => {
   return (
-   <div className=""></div>
-  )
-}
+    <>
+      <Home />
+    </>
+  );
+};
 
-export default Rootlayouts
+export default RootLayouts;
