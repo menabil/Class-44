@@ -3,8 +3,8 @@ import Flex from "../Flex";
 import Image from "../Image";
 import logo from "../../assets/Logo.png";
 import Button from "../Button";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
   return (

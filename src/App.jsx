@@ -1,5 +1,5 @@
 import "./App.css";
-import RootLayouts from "./components/layout/RootLayouts";
+import RootLayouts from "./components/layouts/RootLayouts";
 import About from "./components/pages/About";
 import Service from "./components/pages/Service";
 import Protfolio from "./components/pages/Protfolio";
@@ -7,8 +7,8 @@ import Price from "./components/pages/Price";
 import Blog from "./components/pages/Blog";
 import Error from "./components/pages/Error";
 import Home from "./components/pages/Home";
-import { Routes, Route } from "react-router-dom";
 import Contact from "./components/pages/Contact";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
