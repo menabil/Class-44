@@ -11,7 +11,9 @@ const Footer = () => {
         <Flex className={"items-start"}>
           <div className="w-[45%]">
             <div className="">
-              <Image imgSrc={logo} />
+              <Link to={"/"}>
+                <Image imgSrc={logo} />
+              </Link>
               <p className="font-nuni text-[#6C7D93] text-[18px] leading-[180%] pt-[50px] w-[430px]">
                 Install any demo or template with a single click. You can mix
                 and match all the demos & templates. Every demo can be turned
