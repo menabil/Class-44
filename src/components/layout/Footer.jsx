@@ -2,6 +2,7 @@ import Container from "../Container";
 import Flex from "../Flex";
 import Image from "../Image";
 import logo from "../../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,10 +12,10 @@ const Footer = () => {
           <div className="w-[45%]">
             <div className="">
               <Image imgSrc={logo} />
-              <p className="font-nuni text-[#6C7D93] text-[18px] leading-[180%] pt-[50px]">
-                Install any demo or template with a single click. You <br /> can
-                mix and match all the demos & templates. Every <br /> demo can
-                be turned into one or multi-page.
+              <p className="font-nuni text-[#6C7D93] text-[18px] leading-[180%] pt-[50px] w-[430px]">
+                Install any demo or template with a single click. You can mix
+                and match all the demos & templates. Every demo can be turned
+                into one or multi-page.
               </p>
             </div>
           </div>
@@ -24,21 +25,29 @@ const Footer = () => {
               <h3 className="font-openSan text-2xl font-semibold text-[#413F45] pb-12">
                 Features
               </h3>
-              <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
-                Home
-              </p>
-              <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
-                About
-              </p>
+              <Link to={"/"}>
+                <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
+                  Home
+                </p>
+              </Link>
+              <Link to={"/about"}>
+                <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
+                  About
+                </p>
+              </Link>
               <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
                 Benifit
               </p>
-              <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
-                Pricing
-              </p>
-              <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
-                Blog
-              </p>
+              <Link to={"/price"}>
+                <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
+                  Pricing
+                </p>
+              </Link>
+              <Link to={"/blog"}>
+                <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
+                  Blog
+                </p>
+              </Link>
             </div>
 
             <div className="">
@@ -66,9 +75,11 @@ const Footer = () => {
               <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
                 Accessibility
               </p>
-              <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
-                Contact us
-              </p>
+              <Link to={"/contact"}>
+                <p className="font-nuni text-xl font-semibold text-[#6C7D93] pb-7.5">
+                  Contact us
+                </p>
+              </Link>
             </div>
           </div>
         </Flex>

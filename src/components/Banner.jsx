@@ -7,19 +7,18 @@ import banner from "../assets/Banner.png";
 const Banner = () => {
   return (
     <>
-      <Image imgSrc={banner} />
+      <Image imgSrc={banner} className={"relative"} />
       <Container>
         <div className="mt-[150px] absolute top-[50px]">
           <Image imgSrc={bannerLogo} />
-          <h1 className="text-[72px] font-openSan font-extrabold leading-[98px] text-[#192239]">
-            We Are Digital <br />{" "}
-            <span className="text-[#FF7628]">Marketing</span> Agency
+          <h1 className="text-[72px] font-openSan font-extrabold leading-[98px] text-[#192239] w-[680px] ">
+            We Are Digital<span className="text-[#FF7628]"> Marketing </span>
+            Agency
           </h1>
-          <p className="text-[20px] font-papi leading-9 text-[#6C7D93] pt-5">
-            Use customer data to build great and solid product <br />{" "}
-            experiences that convert. Digital marketing’s <br /> development has
-            changed the way brands and <br /> businesses use technology for
-            marketing.
+          <p className="text-[20px] font-papi leading-9 text-[#6C7D93] pt-5 w-[600px]">
+            Use customer data to build great and solid product experiences that
+            convert. Digital marketing’s development has changed the way brands
+            and businesses use technology for marketing.
           </p>
           <Button className={"font-bold mt-7.5"} btnText={"Get Free Quoto"} />
         </div>

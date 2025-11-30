@@ -8,6 +8,7 @@ import Blog from "./components/pages/Blog";
 import Error from "./components/pages/Error";
 import Home from "./components/pages/Home";
 import { Routes, Route } from "react-router-dom";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route path="/protfolio" element={<Protfolio />} />
           <Route path="/price" element={<Price />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );

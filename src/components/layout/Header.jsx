@@ -13,7 +13,9 @@ const Header = () => {
         <div className={"pt-5 z-1 fixed w-[1170px]"}>
           <Flex className="justify-between">
             <div className="">
-              <Image imgSrc={logo} />
+              <Link to={"/"}>
+                <Image imgSrc={logo} className={'cursor-pointer'} />
+              </Link>
             </div>
             <div className="">
               <ul className="flex gap-x-12 items-center ">
@@ -22,7 +24,6 @@ const Header = () => {
                     <span className="hover:text-[#FF7628] hover:duration-300">
                       Home
                     </span>
-                    <MdOutlineKeyboardArrowDown className="text-2xl pl-2" />
                   </li>
                 </Link>
                 <Link to={"/about"}>
@@ -42,7 +43,6 @@ const Header = () => {
                   </li>
                 </Link>
                 <Link to={"/protfolio"}>
-                  {" "}
                   <li className="flex items-center  text-[18px] font-openSan font-semibold text-[#192239] ">
                     <span className="hover:text-[#FF7628] hover:duration-300">
                       Protfolio
@@ -51,7 +51,6 @@ const Header = () => {
                   </li>
                 </Link>
                 <Link to={"/price"}>
-                  {" "}
                   <li className="flex items-center  text-[18px] font-openSan font-semibold text-[#192239] ">
                     <span className="hover:text-[#FF7628] hover:duration-300">
                       Price
@@ -60,7 +59,6 @@ const Header = () => {
                   </li>
                 </Link>
                 <Link to={"/blog"}>
-                  {" "}
                   <li className="flex items-center  text-[18px] font-openSan font-semibold text-[#192239] ">
                     <span className="hover:text-[#FF7628] hover:duration-300">
                       Blog
@@ -71,7 +69,9 @@ const Header = () => {
               </ul>
             </div>
             <div className="">
-              <Button btnText={"Contact Us"} className={"font-semibold"} />
+              <Link to={"/contact"}>
+                <Button btnText={"Contact Us"} className={"font-semibold"} />
+              </Link>
             </div>
           </Flex>
         </div>
